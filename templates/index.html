@@ -1,8 +1,9 @@
 {% extends "base.html" %}
 
-{% block title %}Home{% endblock %}
+{% block title %}Bienvenido{% endblock %}
 
 {% block content %}
     <h1>Bienvenido a Mi Blog</h1>
     <p>Este es un blog simple hecho con Flask.</p>
+    <a href="{{ url_for('get_all_posts') }}">Ver Posts</a>
 {% endblock %}
